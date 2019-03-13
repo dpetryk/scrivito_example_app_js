@@ -5,10 +5,7 @@ Scrivito.provideEditingConfig("FormWidget", {
   title: "Form",
   thumbnail: FormWidgetIcon,
   attributes: {
-    agreementText: {
-      title: "Agreement text",
-      description: "Optional",
-    },
+  
     buttonText: {
       title: "Submit button text",
       description: "Default: send message",
@@ -26,7 +23,7 @@ Scrivito.provideEditingConfig("FormWidget", {
       ],
     },
   },
-  properties: ["agreementText", "buttonText", "action", "backgroundColor"],
+  properties: ["buttonText", "action", "backgroundColor"],
   initialContent: {
     buttonText: "send message",
     backgroundColor: "white",

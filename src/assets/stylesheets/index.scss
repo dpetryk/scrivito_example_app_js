@@ -3200,6 +3200,16 @@ img.cookie-img {
   }
 }
 
+
+/* Form Customizer
+================================================== */
+
+.required-mark {
+  color: $danger;
+  font-size: 1.2em;
+}
+
+
 /* google maps fix
 ================================================== */
 
@@ -3325,3 +3335,4 @@ img.cookie-img {
     line-height: 45px;
   }
 }
+

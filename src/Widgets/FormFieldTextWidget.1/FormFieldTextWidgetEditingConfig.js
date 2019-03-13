@@ -1,8 +1,8 @@
 import * as Scrivito from "scrivito";
 import iconWidgetIcon from "../../assets/images/icon_widget.svg";
 
-Scrivito.provideEditingConfig("FormFieldWidget", {
-    title: "Form Field",
+Scrivito.provideEditingConfig("FormFieldTextWidget", {
+    title: "Form Field - Text",
     thumbnail: iconWidgetIcon,
     attributes: {
         name: {
@@ -15,19 +15,17 @@ Scrivito.provideEditingConfig("FormFieldWidget", {
             title: "Type",
             values: [
                 { value: "text", title: "Text" },
-                { value: "checkbox", title: "Checkbox" },
-                { value: "radio", title: "Radio" },
-                { value: "select", title: "Select" },
                 { value: "date", title: "Date" },
                 { value: "email", title: "Email" },
+                { value: "tel", title: "Phone" },
                 { value: "password", title: "Password" },
             ]
         },
         required: {
             title: "Required",
             values: [
-                { value: "yes", title: "Yes" },
-                { value: "no", title: "No" }
+                { value: "true", title: "Yes" },
+                { value: "false", title: "No" }
             ]
         },
         placeholder: {
@@ -36,7 +34,8 @@ Scrivito.provideEditingConfig("FormFieldWidget", {
     },
     properties: ["name", "label", "type", "required", "placeholder"],
     initialContent: {
-        required: "no",
+        required: "false",
         type: "text",
+        label: "Input field"
     },
 });
