@@ -4,6 +4,7 @@ import * as Scrivito from "scrivito";
 Scrivito.provideComponent("FormWidget", ({ widget }) => {
   const classNames = [""];
   const action = widget.get("action");
+  const includeBotField = widget.get("includeBotField");
 
   if (widget.get("backgroundColor") === "transparent") {
     classNames.push("card-white-transparent");
@@ -11,9 +12,23 @@ Scrivito.provideComponent("FormWidget", ({ widget }) => {
     classNames.push("floating-label", "card-theme", "card", "card-padding");
   }
 
+  function BotPreventingField(props) {
+    if (includeBotField === "yes") {
+      return (
+          <div className="d-none">
+            <label>
+              Don’t fill this out: <input name="bot-field" />
+            </label>
+          </div>
+      )
+    }
+    return null;
+  }
+
   return (
     <div className={classNames.join(" ")}>
       <form action={action} method="post">
+      <BotPreventingField />
         <Scrivito.ContentTag
           content={widget}
           attribute="items"

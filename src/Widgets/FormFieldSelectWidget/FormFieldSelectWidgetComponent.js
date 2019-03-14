@@ -6,12 +6,10 @@ Scrivito.provideComponent("FormFieldSelectWidget", ({ widget }) => {
     const name = widget.get("name");
     const label = widget.get("label");
     const options = widget.get("options").split(",");
-    const values = widget.get("values");
+    const values = widget.get("values").split(",");
     const required = widget.get("required") === "true" ? true : false;
 
     return (
-
-        <div>
             <div className="form-group">
                 <label htmlFor={name}>{label}{required ? <span className="required-mark"> *</span> : ""}</label>
                 <select
@@ -21,13 +19,11 @@ Scrivito.provideComponent("FormFieldSelectWidget", ({ widget }) => {
                     type="select"
                     required={required}
                 >
-                    {/* {options.forEach(item => item.trim())} */}
                     {options.map((item, index) => (
-                        <option key={index}>{item}</option>
+                        <option key={index} value={(values && values.length === options.length) ? values[index].trim() : item.trim()}>{item.trim()}</option>
                     ))}
                 </select>
             </div>
-        </div>
     )
 })
 

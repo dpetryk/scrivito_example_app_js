@@ -1,8 +1,8 @@
 import * as Scrivito from "scrivito";
 import iconWidgetIcon from "../../assets/images/icon_widget.svg";
 
-Scrivito.provideEditingConfig("FormFieldSelectWidget", {
-    title: "Form Field - Select",
+Scrivito.provideEditingConfig("FormFieldTextareaWidget", {
+    title: "Form Field - Textarea",
     thumbnail: iconWidgetIcon,
     attributes: {
         name: {
@@ -11,13 +11,16 @@ Scrivito.provideEditingConfig("FormFieldSelectWidget", {
         label: {
             title: "Label"
         },
-        options: {
-            title: "Options",
-            description: "Options to select, separated by coma"
+        rows: {
+            title: "Number of rows",
+            description: "Default: 3"
         },
-        values: {
-            title: "Values",
-            description: "Values assigned to options. If not specified, options will be treated as values"
+        placeholder: {
+            title: "Placeholder",
+        },
+        maxLength: {
+            title: "Max input length",
+            description: "Default: 250 characters"
         },
         required: {
             title: "Required",
@@ -27,11 +30,11 @@ Scrivito.provideEditingConfig("FormFieldSelectWidget", {
             ]
         },
     },
-    properties: ["name", "label", "options", "values", "required"],
+    properties: ["name", "label", "rows", "placeholder", "maxLength", "required"],
     initialContent: {
         required: "false",
         type: "text",
-        label: "Input field",
-        options: "Option 1, Options 2, Options 3, ..."
+        rows: 3,
+        maxLength: 250
     },
 });

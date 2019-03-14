@@ -8,18 +8,15 @@ Scrivito.provideComponent("FormFieldRadioWidget", ({ widget }) => {
     const value = widget.get("value");
 
     return (
-        <div>
-            <div className="form-check">
-                <input
-                    className="form-check-input"
-                    id={name}
-                    name={name}
-                    type="radio"
-                    required={required}
-                    value={value}
-                />
-                {label}
-            </div>
+        <div className="form-check">
+            <input
+                className="form-check-input"
+                name={name}
+                type="radio"
+                required={required}
+                value={value ? value : label}
+            />
+            {label}
         </div>
     )
 })

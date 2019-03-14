@@ -11,6 +11,10 @@ Scrivito.provideEditingConfig("FormFieldCheckboxWidget", {
         label: {
             title: "Label"
         },
+        value: {
+            title: "Value",
+            description: "Value passed when checkbox is selected. If not specified, label will be treated as value"
+        },
         required: {
             title: "Required",
             values: [
@@ -18,12 +22,8 @@ Scrivito.provideEditingConfig("FormFieldCheckboxWidget", {
                 { value: "false", title: "No" }
             ]
         },
-        value: {
-            title: "Value",
-            description: "Value passed when checkbox is ticked"
-        }
     },
-    properties: ["name", "label", "required", "value"],
+    properties: ["name", "label", "value", "required"],
     initialContent: {
         required: "false",
         label: "Checkbox",

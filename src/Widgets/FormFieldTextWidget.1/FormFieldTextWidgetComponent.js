@@ -9,7 +9,6 @@ Scrivito.provideComponent("FormFieldTextWidget", ({ widget }) => {
     const placeholder = widget.get("placeholder");
 
     return (
-        <div>
             <div className="form-group">
                 <label htmlFor={name}>{label}{required ? <span className="required-mark"> *</span> : ""}</label>
                 <input
@@ -21,7 +20,6 @@ Scrivito.provideComponent("FormFieldTextWidget", ({ widget }) => {
                     required={required}
                 />
             </div>
-        </div>
     )
 })
 

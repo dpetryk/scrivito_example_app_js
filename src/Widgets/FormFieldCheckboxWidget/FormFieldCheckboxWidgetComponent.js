@@ -8,19 +8,16 @@ Scrivito.provideComponent("FormFieldCheckboxWidget", ({ widget }) => {
     const value = widget.get("value");
 
     return (
-        <div>
             <div className="form-check">
                 <input
                     className="form-check-input"
-                    id={name}
                     name={name}
                     type="checkbox"
                     required={required}
-                    value={value}
+                    value={value ? value : label}
                 /> 
                 {required ? <span className="required-mark">* </span> : ""}{label}
             </div>
-        </div>
     )
 })
 

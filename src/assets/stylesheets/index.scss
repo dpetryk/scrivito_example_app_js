@@ -3209,6 +3209,16 @@ img.cookie-img {
   font-size: 1.2em;
 }
 
+.textarea-counter {
+  float: right;
+  font-size: 12px;
+  margin-bottom: 1em;
+}
+
+.exceeded{
+  font-weight: 800;
+  color: $danger;
+}
 
 /* google maps fix
 ================================================== */

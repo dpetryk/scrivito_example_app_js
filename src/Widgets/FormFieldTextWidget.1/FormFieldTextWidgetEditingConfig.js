@@ -21,6 +21,9 @@ Scrivito.provideEditingConfig("FormFieldTextWidget", {
                 { value: "password", title: "Password" },
             ]
         },
+        placeholder: {
+            title: "Placeholder"
+        },
         required: {
             title: "Required",
             values: [
@@ -28,11 +31,8 @@ Scrivito.provideEditingConfig("FormFieldTextWidget", {
                 { value: "false", title: "No" }
             ]
         },
-        placeholder: {
-            title: "Placeholder"
-        },
     },
-    properties: ["name", "label", "type", "required", "placeholder"],
+    properties: ["name", "label", "type", "placeholder", "required", ],
     initialContent: {
         required: "false",
         type: "text",

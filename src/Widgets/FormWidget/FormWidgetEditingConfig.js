@@ -8,7 +8,7 @@ Scrivito.provideEditingConfig("FormWidget", {
   
     buttonText: {
       title: "Submit button text",
-      description: "Default: send message",
+      description: "Default: Submit",
     },
     action: {
       title: "Form action",
@@ -22,10 +22,19 @@ Scrivito.provideEditingConfig("FormWidget", {
         { value: "transparent", title: "Transparent" },
       ],
     },
+    includeBotField: {
+      title: "Include hidden bot preventing field",
+      description: "Includes hidden field in the from which determines if form is submitted by a bot",
+      values: [
+        { value: "yes", title: "Yes" },
+        { value: "no", title: "No" },
+      ],
+    }
   },
-  properties: ["buttonText", "action", "backgroundColor"],
+  properties: ["buttonText", "action", "backgroundColor", "includeBotField"],
   initialContent: {
     buttonText: "send message",
     backgroundColor: "white",
+    includeBotField: "yes"
   },
 });
