@@ -6,16 +6,17 @@ const FormWidget = Scrivito.provideWidgetClass("FormWidget", {
       only: [
         "FormFieldTextWidget",
         "FormFieldCheckboxWidget",
-        "SpaceWidget",
         "FormFieldRadioWidget",
         "FormFieldSelectWidget",
-        "FormFieldTextareaWidget"
+        "FormFieldTextareaWidget",
+        "SpaceWidget",
+        "TextWidget",
+        "HeadlineWidget"
       ]
     }],
     buttonText: "string",
     action: "string",
     backgroundColor: ["enum", { values: ["white", "transparent"] }],
-    includeBotField: ["enum", { values: ["yes", "no"] }]
   },
 });
 
