@@ -10,7 +10,7 @@ const FormFieldTextareaWidget = Scrivito.provideWidgetClass("FormFieldTextareaWi
         preventResize: ["enum", { values: ["yes", "no"] }],
         required: ["enum", { values: ["true", "false"] }],
     },
-    onlyInside: "FormWidget",
+    onlyInside: ["FormWidget", "FormColumnWidget"]
 });
 
 export default FormFieldTextareaWidget;

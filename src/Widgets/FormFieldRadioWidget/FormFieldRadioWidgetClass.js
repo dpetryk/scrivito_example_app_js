@@ -7,7 +7,7 @@ const FormFieldRadioWidget = Scrivito.provideWidgetClass("FormFieldRadioWidget",
         required: ["enum", { values: ["true", "false"] }],
         value: "string"
     },
-    onlyInside: "FormWidget",
+    onlyInside: ["FormWidget", "FormColumnWidget"]
 });
 
 export default FormFieldRadioWidget;

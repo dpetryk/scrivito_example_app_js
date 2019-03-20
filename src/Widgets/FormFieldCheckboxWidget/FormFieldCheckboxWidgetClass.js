@@ -7,7 +7,7 @@ const FormFieldCheckboxWidget = Scrivito.provideWidgetClass("FormFieldCheckboxWi
         required: ["enum", { values: ["true", "false"] }],
         value: "string"
     },
-    onlyInside: "FormWidget",
+    onlyInside: ["FormWidget", "FormColumnWidget"]
 });
 
 export default FormFieldCheckboxWidget;

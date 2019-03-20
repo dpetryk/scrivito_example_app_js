@@ -11,7 +11,8 @@ const FormWidget = Scrivito.provideWidgetClass("FormWidget", {
         "FormFieldTextareaWidget",
         "SpaceWidget",
         "TextWidget",
-        "HeadlineWidget"
+        "HeadlineWidget",
+        "FormColumnContainerWidget"
       ]
     }],
     buttonText: "string",

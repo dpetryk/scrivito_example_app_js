@@ -8,7 +8,7 @@ const FormFieldSelectWidget = Scrivito.provideWidgetClass("FormFieldSelectWidget
         values: "string",
         required: ["enum", { values: ["true", "false"] }],
     },
-    onlyInside: "FormWidget",
+    onlyInside: ["FormWidget", "FormColumnWidget"]
 });
 
 export default FormFieldSelectWidget;
