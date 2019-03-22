@@ -1,5 +1,5 @@
 import * as Scrivito from "scrivito";
-import iconWidgetIcon from "../../assets/images/icon_widget.svg";
+import iconWidgetIcon from "../../assets/images/icon_textarea.svg";
 
 Scrivito.provideEditingConfig("FormFieldTextareaWidget", {
     title: "Form Field - Textarea",

@@ -1,5 +1,5 @@
 import * as Scrivito from "scrivito";
-import iconWidgetIcon from "../../assets/images/icon_widget.svg";
+import iconWidgetIcon from "../../assets/images/icon_radio.svg";
 
 Scrivito.provideEditingConfig("FormFieldRadioWidget", {
     title: "Form Field - Radio",
