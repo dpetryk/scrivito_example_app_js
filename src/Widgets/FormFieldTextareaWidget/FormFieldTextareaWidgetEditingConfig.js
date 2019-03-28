@@ -25,14 +25,14 @@ Scrivito.provideEditingConfig("FormFieldTextareaWidget", {
         required: {
             title: "Required",
             values: [
-                { value: "true", title: "Yes" },
-                { value: "false", title: "No" }
+                { value: "yes", title: "Yes" },
+                { value: "no", title: "No" }
             ]
         },
     },
     properties: ["name", "label", "rows", "placeholder", "maxLength", "required"],
     initialContent: {
-        required: "false",
+        required: "no",
         type: "text",
         rows: 3,
         maxLength: 250

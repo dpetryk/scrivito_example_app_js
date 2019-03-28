@@ -27,14 +27,14 @@ Scrivito.provideEditingConfig("FormFieldTextWidget", {
     required: {
       title: "Required",
       values: [
-        { value: "true", title: "Yes" },
-        { value: "false", title: "No" }
+        { value: "yes", title: "Yes" },
+        { value: "no", title: "No" }
       ]
     },
   },
   properties: ["name", "label", "type", "placeholder", "required",],
   initialContent: {
-    required: "false",
+    required: "no",
     type: "text",
     label: "Input field"
   },

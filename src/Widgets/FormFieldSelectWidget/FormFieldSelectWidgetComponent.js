@@ -7,7 +7,7 @@ Scrivito.provideComponent("FormFieldSelectWidget", ({ widget }) => {
     const label = widget.get("label");
     const options = widget.get("options").split(",");
     const values = widget.get("values").split(",");
-    const required = widget.get("required") === "true" ? true : false;
+    const required = widget.get("required") === "yes" ? true : false;
 
     return (
             <div className="form-group">

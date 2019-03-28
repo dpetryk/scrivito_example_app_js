@@ -19,10 +19,8 @@ class FormFieldTextareaWidget extends React.Component {
         const rows = this.props.widget.get("rows") ? this.props.widget.get("rows").toString() : "3";
         const placeholder = this.props.widget.get("placeholder");
         const maxLength = this.props.widget.get("maxLength") ? this.props.widget.get("maxLength").toString() : "250";
-        const required = this.props.widget.get("required") === "true" ? true : false;
+        const required = this.props.widget.get("required") === "yes" ? true : false;
         const counter = this.state.counter;
-        // const counterClassNames = ["textarea-classname"]
-
 
         return (
             <div className="form-group" >

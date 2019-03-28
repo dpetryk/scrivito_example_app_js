@@ -18,14 +18,14 @@ Scrivito.provideEditingConfig("FormFieldCheckboxWidget", {
         required: {
             title: "Required",
             values: [
-                { value: "true", title: "Yes" },
-                { value: "false", title: "No" }
+                { value: "yes", title: "Yes" },
+                { value: "no", title: "No" }
             ]
         },
     },
     properties: ["name", "label", "value", "required"],
     initialContent: {
-        required: "false",
-        label: "Checkbox",
+        required: "yes",
+        label: "I consent to my above personal data being processed by Infopark AG in accordance with the <a href='https://infopark.com/scrivito/en/privacy-policy' target='_blank' rel='noopener noreferrer'>privacy policy.</a>",
     },
 });

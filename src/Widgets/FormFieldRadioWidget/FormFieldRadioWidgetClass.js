@@ -3,11 +3,11 @@ import * as Scrivito from "scrivito";
 const FormFieldRadioWidget = Scrivito.provideWidgetClass("FormFieldRadioWidget", {
     attributes: {
         name: "string",
-        label: "string",
-        required: ["enum", { values: ["true", "false"] }],
+        label: "html",
+        required: ["enum", { values: ["yes", "no"] }],
         value: "string"
     },
-    onlyInside: ["FormWidget", "FormColumnWidget"]
+    onlyInside: ["FormBuilderWidget", "FormColumnWidget"]
 });
 
 export default FormFieldRadioWidget;

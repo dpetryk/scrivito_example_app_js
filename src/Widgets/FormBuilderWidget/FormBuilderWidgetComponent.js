@@ -1,7 +1,7 @@
 import * as React from "react";
 import * as Scrivito from "scrivito";
 
-Scrivito.provideComponent("FormWidget", ({ widget }) => {
+Scrivito.provideComponent("FormBuilderWidget", ({ widget }) => {
   const classNames = [""];
   const action = widget.get("action");
 

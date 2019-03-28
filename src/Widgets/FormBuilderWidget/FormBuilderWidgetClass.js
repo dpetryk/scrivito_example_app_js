@@ -1,6 +1,6 @@
 import * as Scrivito from "scrivito";
 
-const FormWidget = Scrivito.provideWidgetClass("FormWidget", {
+const FormBuilderWidget = Scrivito.provideWidgetClass("FormBuilderWidget", {
   attributes: {
     items: ["widgetlist", {
       only: [
@@ -21,4 +21,4 @@ const FormWidget = Scrivito.provideWidgetClass("FormWidget", {
   },
 });
 
-export default FormWidget;
+export default FormBuilderWidget;

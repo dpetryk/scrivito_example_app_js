@@ -1,10 +1,12 @@
 import * as React from "react";
+import ReactHtmlParser from 'react-html-parser';
 import * as Scrivito from "scrivito";
+
 
 Scrivito.provideComponent("FormFieldRadioWidget", ({ widget }) => {
     const name = widget.get("name");
     const label = widget.get("label");
-    const required = widget.get("required") === "true" ? true : false;
+    const required = widget.get("required") === "yes" ? true : false;
     const value = widget.get("value");
 
     return (
@@ -16,7 +18,7 @@ Scrivito.provideComponent("FormFieldRadioWidget", ({ widget }) => {
                 required={required}
                 value={value ? value : label}
             />
-            {label}
+            {ReactHtmlParser(label)}
         </div>
     )
 })

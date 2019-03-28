@@ -5,7 +5,7 @@ Scrivito.provideComponent("FormFieldTextWidget", ({ widget }) => {
     const name = widget.get("name");
     const label = widget.get("label");
     const type = widget.get("type");
-    const required = widget.get("required") === "true" ? true : false;
+    const required = widget.get("required") === "yes" ? true : false;
     const placeholder = widget.get("placeholder");
 
     return (
