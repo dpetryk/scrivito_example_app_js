@@ -13,8 +13,8 @@ Scrivito.provideComponent("FormBuilderWidget", ({ widget }) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <form name="formBuilder" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="formBuilder" />
+      <form name={widget.id()} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value={widget.id()} />
         <div className="d-none">
           <label>
             Don’t fill this out: <input name="bot-field" />
