@@ -3,7 +3,7 @@ import * as Scrivito from "scrivito";
 
 Scrivito.provideComponent("FormBuilderWidget", ({ widget }) => {
   const classNames = [""];
-  // const action = widget.get("action");
+  const action = widget.get("action");
 
   if (widget.get("backgroundColor") === "transparent") {
     classNames.push("card-white-transparent");
