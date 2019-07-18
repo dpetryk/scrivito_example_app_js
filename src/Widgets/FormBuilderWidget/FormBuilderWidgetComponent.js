@@ -3,7 +3,8 @@ import * as Scrivito from "scrivito";
 
 Scrivito.provideComponent("FormBuilderWidget", ({ widget }) => {
   const classNames = [""];
-  // const action = widget.get("action");
+  const action = widget.get("action");
+  const formName = widget.get("formName") ? `${widget.get("formName")}-id-${widget.id()}` : `form-id-${widget.id()}`;
 
   if (widget.get("backgroundColor") === "transparent") {
     classNames.push("card-white-transparent");
@@ -13,8 +14,8 @@ Scrivito.provideComponent("FormBuilderWidget", ({ widget }) => {
 
   return (
     <div className={classNames.join(" ")}>
-      <form name={widget.id()} method="post" data-netlify="true" data-netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value={widget.id()} />
+      <form name={formName} method="post" action={action} data-netlify="true" data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value={formName} />
         <div className="d-none">
           <label>
             Don’t fill this out: <input name="bot-field" />

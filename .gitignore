@@ -4,3 +4,4 @@ buildPrerendered
 node_modules
 tmp
 .env
+.DS_Store
